@@ -1,0 +1,14 @@
+# Sanal ortamı oluştur
+python3 -m venv nbaAi
+
+# Sanal ortamı etkinleştir
+source nbaAi/bin/activate
+
+pip install --upgrade pip
+
+pip3 install -r requirements.txt
+
+python3 main.py -xgb -odds=fanduel
+
+cd Flask
+flask --debug run
